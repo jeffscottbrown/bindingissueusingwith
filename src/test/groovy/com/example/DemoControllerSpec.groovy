@@ -21,4 +21,15 @@ Class[] getDomainClassesToMock() {
         model.widget.name == 'Some Name'
         model.widget.size == 42
     }
+
+    void "test anotherTechique"() {
+        when:
+        params.nameParam = 'Some Other Name'
+        params.sizeParam = '2112'
+        def model = controller.anotherTechnique()
+
+        then:
+        model.widget.name == 'Some Other Name'
+        model.widget.size == 2112
+    }
 }

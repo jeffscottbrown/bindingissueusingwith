@@ -10,4 +10,13 @@ class DemoController {
         }
         [widget: w]
     }
+
+    def anotherTechnique(String nameParam, int sizeParam) { 
+        def w = new Widget()
+        w.with {
+            name = nameParam
+            size = sizeParam
+        }
+        [widget: w]
+    }
 }
