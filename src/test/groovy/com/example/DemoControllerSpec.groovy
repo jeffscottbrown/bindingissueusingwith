@@ -11,7 +11,7 @@ Class[] getDomainClassesToMock() {
         Widget
     }
 
-    void "test someTechique"() {
+    void "test someTechnique"() {
         when:
         params.name = 'Some Name'
         params.size = '42'
@@ -22,7 +22,7 @@ Class[] getDomainClassesToMock() {
         model.widget.size == 42
     }
 
-    void "test anotherTechique"() {
+    void "test anotherTechnique"() {
         when:
         params.nameParam = 'Some Other Name'
         params.sizeParam = '2112'
